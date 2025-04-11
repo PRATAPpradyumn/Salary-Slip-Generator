@@ -1,0 +1,22 @@
+salary = int(input("enter your salary"))
+
+if salary > 40000 and salary < 100000:
+  tax = salary*0.10
+  inhand_salary = salary - tax
+  print("your tax would be ",tax)
+elif salary > 100000 and salary < 900000:
+  tax = salary*0.20
+  inhand_salary = salary - tax
+  print("your tax would be ",tax)
+elif salary > 900000 and salary < 1300000:
+  tax = salary*0.25
+  inhand_salary = salary - tax
+  print("your tax would be ",tax)
+elif salary > 1300000:
+  tax = salary*0.40
+  inhand_salary = salary - tax
+  print("your tax would be ",tax) 
+else:
+  inhand_salary = salary
+  print("tax would be 0%")
+print("salary is ",inhand_salary)
